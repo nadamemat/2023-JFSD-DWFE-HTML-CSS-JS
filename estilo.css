@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
 
-body {
+head + body {
   margin: 0
 }
 
@@ -45,7 +45,7 @@ header figure {
   width: 175px;*/
 }
 
-header figure img {
+header figure img:empty {
   border-radius: 90px;
   border: solid #fff;
   height: 175px;
