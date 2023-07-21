@@ -3,18 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV de Marcos Fabio Sagula" >
+    <meta name="author" content="Sagula, Marcos Fabio" >
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="programacion.js">
     <title>cv</title>
 </head>
-<body>
+<body onload="dinamico()">
 <header class="banner">
     <div class="lapartedearriba">
+     <button id="modoBtn">Diurno/Nocturno</button>
+     
+  <script>
+    // Función para alternar el modo nocturno/diurno
+    function toggleDarkMode() {
+      const body = document.body;
+      body.classList.toggle("dark-mode");
+    }
+    // Evento click para el botón
+    const modoBtn = document.getElementById("modoBtn");
+    modoBtn.addEventListener("click", toggleDarkMode);
+  </script>
       
-        <!-- <img src="c:\Users\user\Documents\2023-JFSD-DWFE-HTML-CSS-JS\YoCurriculumVitae.jpg" alt="Marcos Sagula.">-->
-        <img 
-        id="fotoPerfil" src="YoCurriculumVitae.jpg" alt="foto 4x4" width="230em" onmouseover="aumentarFoto('fotoperfil')" onmouseleave="disminuirFoto('fotoPerfil')"
-        >
+        <img id="fotoPerfil" src="YoCurriculumVitae.jpg" width="230em">
+          
+          <script src="programacion.js"></script>
       
       <hgroup>
         <h1 class="fadeInDown">Marcos Fabio Sagula</h1>
@@ -56,19 +69,28 @@
       <ul>
          <li>
           <h4><strong>Operador Termico</strong></h4>
-          <span class="site">Central Puerto</span>
+          <span class="site">Central Costanera</span>
+          <button id="boton1">Link</button>
+                           
+          <script src="programacion.js"></script>
           <span class="date">2009 - Actualmente</span>
           <p>Electromeacnico y operador termico.</p>
         </li>
         <li>
           <h4><strong>Vendedor</strong></h4>
           <span class="site">Easy.</span>
+          <button id="boton2">Link</button>
+        
+          <script src="programacion.js"></script>
           <span class="date">2008 - 2009</span>
           <p>Vendedor y cajero en area electrocidad y herramientas.</p>
         </li>
         <li>
           <h4><strong>Aydante mecanico</strong></h4>
           <span class="site">MASA</span>
+          <button id="boton3">Link</button>
+        
+          <script src="programacion.js"></script>
           <span class="date">2007 - 2008</span>
           <p>Ayudante mecanico y electricista en insdustrias.</p>
         </li>
@@ -106,14 +128,14 @@
       <img class="icon" src="https://i.imgur.com/mTJKfOj.png" alt="sobre mí">
       <h3>Social Media - Contactar</h3>
       <div>
-        <a href="marcos.sagula@enel.com"><img class="social" src="https://imgur.com/FyuhhGf.png" alt="Email"></a>
-        <a href="#"><img class="social" src="https://imgur.com/ZvnZYqb.png" alt="Google+"></a>
-        <a href="#"><img class="social" src="https://imgur.com/kouWDG0.png"  alt="LinkedIn"></a>
+        <a href="https://accounts.google.com/"><img class="social" src="https://imgur.com/FyuhhGf.png" alt="Email"></a>
+        <a href="https://support.google.com/"><img class="social" src="https://imgur.com/ZvnZYqb.png" alt="Google+"></a>
+        <a href="https://www.linkedin.com/"><img class="social" src="https://imgur.com/kouWDG0.png"  alt="LinkedIn"></a>
       </div>
       <div>
-        <a href="#"><img class="social" src="https://imgur.com/PXBh6dj.png" alt="Twitter"></a>
-        <a href="#"><img class="social" src="https://imgur.com/jKIJuCJ.png" alt="Facebook"></a>
-        <a href="#"><img class="social" src="https://imgur.com/ePCHOOz.png" alt="Wordpress"></a>
+        <a href="https://twitter.com/home"><img class="social" src="https://imgur.com/PXBh6dj.png" alt="Twitter"></a>
+        <a href="https://www.facebook.com/"><img class="social" src="https://imgur.com/jKIJuCJ.png" alt="Facebook"></a>
+        <a href="https://wordpress.com/es/"><img class="social" src="https://imgur.com/ePCHOOz.png" alt="Wordpress"></a>
       </div>
     </div>
     
